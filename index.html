@@ -1,0 +1,36 @@
+<div id="eedomus">
+  
+  <div class="row-fluid">
+      <div class="span8">
+          <p>
+            Le module Eedomus 2.0 permet de <a href="http://doc.eedomus.com/view/API_eedomus#get_-.3E_periph.caract">lire</a> 
+            ou <a href="http://doc.eedomus.com/view/API_eedomus#set_-.3E_periph.value">modifier</a> des périphériques de la box.
+            Les paramètres utilisés pour l'URL:
+          </p>
+          <table class='table table-bordered'>
+            <tr><td>api_user</td><td>configuration</td><td>clef public (compte utilisateur)</td></tr>
+            <tr><td>api_secret</td><td>configuration</td><td>clef secrète (compte utilisateur)</td></tr>
+            <tr><td>periphId</td><td>data</td><td>Identifiant du périphérique (dans ses options avancées)</td></tr>
+            <tr><td>periphValue</td><td>data</td><td>valeure à positionner en cas de modification</td></tr>
+            </tr>
+          </table>
+          <p>
+          Le paramètre de configuration <code>answer</code> permet de choisir différentes réponse de SARAH aux ordres.
+          </p>
+          
+          <h4>Usages</h4>
+          <p>Voici plusieurs usages possibles de ce plugin, et plus généralement des box domotiques:</p>
+          <ul>
+            <li>Reconnaissance vocale: SARAH allume la lampe du salon (cf. eedomus.xml)</li>
+            <li>Reconnaissance gestuelle: faire une règle pour allumer les lampes d'un geste</li>
+            <li>QRCode: allumer/éteindre un composant</li>
+            <li>Framework: faire un plugin perso appelant ce plugin</li>
+          </ul>
+          
+          <h4>Migration v1.0 => v2.0</h4>
+          L'API URL a été remplacée par l'API IP pour faire des set et des get. Les SET exploitent l'API locale (adresse IP)
+      </div>
+      <div class="span4"><img src="/assets/eedomus/images/eedomus.jpg" align="right" width="300"/></div>
+  </div> 
+  
+</div>

@@ -1,0 +1,12 @@
+{
+  "modules" : { 
+    "eedomus":     {
+      "description": "Pilote le boitier domotique Eedomus",
+      "version"    : "2.0",
+      "answers"    : "Je m'en occupe !|Voilà qui est fait !|C'est fait !|Voilà !|Tout de suite !",
+      "api_ip"     : "0.0.0.0/api",
+      "api_user"   : "[FIXME]",
+      "api_secret" : "[FIXME]"
+    }
+  }
+}

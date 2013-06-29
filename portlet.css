@@ -1,0 +1,10 @@
+
+.plugin-gridster.eedomus .front {
+  background: #85BA47 url('images/logo.png') center 34px;
+  background-size:   135px 87px;
+  background-repeat: no-repeat;
+}
+
+.plugin-gridster.eedomus .back {
+  background: #85BA47;
+}
