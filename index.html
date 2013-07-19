@@ -27,6 +27,28 @@
             <li>Framework: faire un plugin perso appelant ce plugin</li>
           </ul>
           
+          <h4>Intégration</h4>
+          <p>Ce plugin framework peut être utilisé par les autres plugins pour interroger la box domotique</p>
+          
+          <h5>Get</h5>
+          <p>Fait un Get sur le périphérique et récupère le JSON de la box</p>
+<pre>
+  SARAH.call('eedomus', { 'periphId' : '12345'}, function(options){
+    console.log(options.json.last_value);
+  });
+</pre>
+          <p>L'appel est asynchrone ce qui impose de continuer le code dans le callback.</p>
+
+          <h5>Set</h5>
+          <p>Fait un Set sur le périphérique avec la valeure associée</p>
+<pre>
+  SARAH.call('eedomus', { 'periphId' : '12345', 
+                          'periphValue' : 100 }, function(options){
+    console.log('Et voilà');
+  });
+</pre>
+<p>Il est aussi possible d'appeler <code>SARAH.run()</code> sans callback. Le moteur de règle prendra la suite.</p>
+
           <h4>Migration v1.0 => v2.0</h4>
           L'API URL a été remplacée par l'API IP pour faire des set et des get. Les SET exploitent l'API locale (adresse IP)
       </div>
